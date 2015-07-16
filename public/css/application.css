@@ -1,0 +1,132 @@
+/*general element extra specs*/
+
+html, body, .Override.container, .Override .col-md-4, .Override .col-md-8 {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.Override *:before, .Override *:after {
+  display: none;
+}
+
+.Override.container:before {
+  display: block;
+  float: left;
+  height: 100%;
+}
+
+.Override .fill {
+  color: black;
+  position: relative;
+}
+
+.Override .fill:after {
+  content: '';
+  display: block;
+  clear: left;
+}
+
+.Override .wrapper {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  margin-bottom: 2em;
+}
+
+.Override .col-md-4 {
+  float: left;
+  position: static;
+  background-color: #0ed57d;
+  box-shadow: 0 0 10px #000000;
+}
+
+.Override .col-md-8 {
+  position: static;
+  background-color: white;
+  overflow: auto;
+  text-align: center;
+}
+
+video {
+  margin-top: 1em;
+  width: 50em;
+  height: 40em;
+  box-shadow: 0 0 10px #000000;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: -20px;
+}
+
+li {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.navbar {
+  background-color: #0ed57d;
+}
+
+a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+input[type=checkbox] {
+    width: 4em;
+    height: 4em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-appearance: none;
+    outline: 0;
+}
+input[type=checkbox]:checked {
+    background-image: url("../assets/checked.png");
+}
+input[type=checkbox]:not(:checked) {
+    background-image: url("../assets/unchecked.png");
+}
+
+.in-bl {
+  display: inline-block;
+}
+
+.left {
+  width: 80%;
+  vertical-align: middle;
+  background-color: #0ed57d;
+}
+
+.right {
+  vertical-align: middle;
+}
+
+#next-button {
+  width: 10em;
+  height: 2.5em;
+  background-color: #ed663e;
+  border-radius: 5px;
+  border: 1px outset buttonface;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+#title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.tc-videoController {
+  display: none;
+}
+
+.welcome {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Fredoka One';
+}
