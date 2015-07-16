@@ -84,10 +84,10 @@ input[type=checkbox] {
     outline: 0;
 }
 input[type=checkbox]:checked {
-    background-image: url("./assets/checked.png");
+    background-image: url("../assets/checked.png");
 }
 input[type=checkbox]:not(:checked) {
-    background-image: url("./assets/unchecked.png");
+    background-image: url("../assets/unchecked.png");
 }
 
 .in-bl {

@@ -13,7 +13,7 @@ $(document).ready(function(){
     };
     var nextVideo = videoArray[videoCount] + '.mp4';
 
-    videoPanel.innerHTML = "<video id='video' controls><source src='./assets/"+nextVideo+"' type='video/mp4'></video>"
+    videoPanel.innerHTML = "<video id='video' controls><source src='../assets/"+nextVideo+"' type='video/mp4'></video>"
 
     videoTitle.innerHTML = videoArray[videoCount]
   };
@@ -43,7 +43,7 @@ $(document).ready(function(){
     };
     var nextVideo = videoArray[videoCount] + '.mp4';
 
-    videoPanel.innerHTML = "<video id='video' controls><source src='./assets/"+nextVideo+"' type='video/mp4'></video>"
+    videoPanel.innerHTML = "<video id='video' controls><source src='../assets/"+nextVideo+"' type='video/mp4'></video>"
 
     videoTitle.innerHTML = videoArray[videoCount]
   });
@@ -53,7 +53,7 @@ $(document).ready(function(){
     videoCount = number
     var nextVideo = videoArray[number] + '.mp4';
 
-    videoPanel.innerHTML = "<video id='video' controls><source src='./assets/"+nextVideo+"' type='video/mp4'></video>"
+    videoPanel.innerHTML = "<video id='video' controls><source src='../assets/"+nextVideo+"' type='video/mp4'></video>"
 
     videoTitle.innerHTML = $(this).text();
   });
