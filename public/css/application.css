@@ -1,8 +1,7 @@
 /*general element extra specs*/
-
 html, body, .Override.container, .Override .col-md-4, .Override .col-md-8 {
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "proxima-nova", 'Open Sans', sans-serif;
 }
 
 .Override *:before, .Override *:after {
@@ -36,8 +35,8 @@ html, body, .Override.container, .Override .col-md-4, .Override .col-md-8 {
 .Override .col-md-4 {
   float: left;
   position: static;
-  background-color: #0ed57d;
-  box-shadow: 0 0 10px #000000;
+  background-color: white;
+  box-shadow: 0 0 2px #000000;
 }
 
 .Override .col-md-8 {
@@ -47,31 +46,50 @@ html, body, .Override.container, .Override .col-md-4, .Override .col-md-8 {
   text-align: center;
 }
 
-video {
+/*navbar specs*/
+
+#logo {
+  margin-left: 5em;
   margin-top: 1em;
-  width: 50em;
-  height: 40em;
-  box-shadow: 0 0 10px #000000;
 }
 
+/*mid bar specs*/
+.welcome {
+  background-image: url("../assets/pattern.png");
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  height: 10em;
+  margin-bottom: 2em;
+}
+
+#title-span {
+  background-color: rgba(54, 155, 122, 0.67);
+  padding: 0 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#centered {
+  margin-top: 2em;
+}
+
+/*left column element specs*/
 ul {
   list-style-type: none;
   margin-left: -20px;
 }
 
-li {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.navbar {
-  background-color: #0ed57d;
-}
-
 a {
-  font-size: 24px;
-  color: white;
+  font-size: 20px;
+  color: #0ed57d;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #425563;
 }
 
 input[type=checkbox] {
@@ -97,11 +115,27 @@ input[type=checkbox]:not(:checked) {
 .left {
   width: 80%;
   vertical-align: middle;
-  background-color: #0ed57d;
 }
 
 .right {
   vertical-align: middle;
+}
+
+/*right column element specs*/
+video {
+  margin-top: 1em;
+  width: 50em;
+  height: 40em;
+  box-shadow: 0 0 2px #000000;
+}
+
+.tc-videoController {
+  display: none;
+}
+
+#title {
+  font-size: 22px;
+  color: #425563;
 }
 
 #next-button {
@@ -113,20 +147,4 @@ input[type=checkbox]:not(:checked) {
   font-size: 18px;
   color: white;
   letter-spacing: 1px;
-}
-
-#title {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.tc-videoController {
-  display: none;
-}
-
-.welcome {
-  text-align: center;
-  font-weight: bold;
-  font-size: 30px;
-  font-family: 'Fredoka One';
 }
