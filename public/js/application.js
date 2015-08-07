@@ -3,7 +3,7 @@ $(document).ready(function(){
   var nextButton = document.getElementById("next-button");
   var videoTitle = document.getElementById('title');
   var videoPanel = document.getElementById('video-player');
-  var videoArray = ['Adding a New User to your Happy Inspector Account', 'Editing Your Own User Profile', 'Integrating Your Account with Dropbox', 'Syncing Data', 'Managing Contacts on a Unit', 'Renaming and Setting Access Controls on a Folder', 'Adding Editing and Deleting an Asset', 'Filter Assets', 'Creating and Editing Templates', 'Moving Templates Between Folders', 'Filtering Viewing and Deleting a Report', 'Downloading a Report as PDF', 'Running a Data Export'];
+  var videoArray = ['Adding a New User to your Happy Inspector Account', 'Editing Your Own User Profile', 'Integrating Your Account with Dropbox', 'Renaming and Setting Access Controls on a Folder', 'Adding Editing and Deleting an Asset', 'Filter Assets', 'Moving Templates Between Folders', 'Filtering Viewing and Deleting a Report', 'Downloading a Report as PDF', 'Running a Data Export'];
 
   function run(){
     if (videoCount >= (videoArray.length - 1)) {
